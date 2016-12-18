@@ -11,9 +11,7 @@ import re
 
 #get the web page source code
 def get_page(href):   
-  headers = {
-             'User-Agent':'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6'  
-            }  
+  headers = {'User-Agent':'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6'}  
   req=urllib2.Request(url=href,headers=headers)
   try:  
     post = urllib2.urlopen(req)  
